@@ -8,7 +8,7 @@ The project supports multiple OPF formulations including:
 - **Hard VUF constraints**
 - **Soft VUF penalization**
 - **Hybrid limits**
-- **Improved Hybrid Limits (IHL)** using the MPVUR/Zlin proxy
+- **Improved Hybrid Limits (IHL)** using the MPVUR proxy
 
 The models are designed for **low-voltage distribution systems with unbalanced loads and distributed generation**.
 
@@ -21,7 +21,7 @@ The models are designed for **low-voltage distribution systems with unbalanced l
 ├── main.jl                  # Main entry point for running simulations
 ├── Default Gen cost.jl      # Default OPF implementation
 ├── VUF+Gen costs.jl         # OPF with VUF penalization
-├── MPVUR+Gen costs.jl       # OPF using MPVUR / Zlin proxy
+├── MPVUR+Gen costs.jl       # OPF using MPVUR proxy
 │
 ├── LVTestCase/
 │   └── Master.dss           # OpenDSS network model
