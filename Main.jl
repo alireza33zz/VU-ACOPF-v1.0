@@ -15,7 +15,7 @@
 # MODE SELECTION
 # ─────────────────────────────────────────────────────────────────────────────
 
-selected_mode = 1   # ← choose 1..5
+selected_mode = 2   # ← choose 1..5
 
 if selected_mode == 1
     global VUF_STATUS = false
