@@ -1,0 +1,70 @@
+!=========================================================
+! PV.txt for My123_Modified
+!
+! 4.16-kV three-phase distribution feeder, 60 Hz
+! Single-phase Wye PV voltage:
+! 4.16/sqrt(3) = 2.40 kV line-to-neutral
+!
+! Installed PV generation:
+! 15 x 20 kW = 300 kW
+! 5 PV systems per phase
+!
+! Dispatchable generation:
+! 3 x 120 kW = 360 kW
+!
+! Total installed active generation = 660 kW
+!
+! PV systems and dispatchable generators are connected
+! to separate buses.
+!=========================================================
+
+
+!---------------------------------------------------------
+! THREE-PHASE DISPATCHABLE GENERATORS
+! Model=3: constant-kW, constant-voltage generator
+!---------------------------------------------------------
+
+New Generator.G1 Bus1=98.1.2.3  Phases=3 Conn=Wye kV=4.16 Model=3 kW=250 kVA=250 Maxkvar=210 Minkvar=-210 Vpu=1.00
+New Generator.G2 Bus1=117.1.2.3 Phases=3 Conn=Wye kV=4.16 Model=3 kW=250 kVA=250 Maxkvar=210 Minkvar=-210 Vpu=1.00
+New Generator.G3 Bus1=61.1.2.3  Phases=3 Conn=Wye kV=4.16 Model=3 kW=250 kVA=250 Maxkvar=210 Minkvar=-210 Vpu=1.00
+
+
+!---------------------------------------------------------
+! SINGLE-PHASE PV SYSTEMS
+!
+! Phase A: PV1-PV5
+! Phase B: PV6-PV10
+! Phase C: PV11-PV15
+!
+! Each inverter:
+! Pmpp = 20 kW
+! kVA  = 22 kVA
+! PF   = 1.0
+!---------------------------------------------------------
+
+
+! Phase A installations
+
+New PVSystem.PV1  Bus1=7.1    Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV2  Bus1=33.1   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV3  Bus1=66.1   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV4  Bus1=75.1   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV5  Bus1=77.1   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+
+
+! Phase B installations
+
+New PVSystem.PV6  Bus1=34.2   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV7  Bus1=40.2   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV8  Bus1=54.2   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV9  Bus1=104.2  Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV10 Bus1=115.2  Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+
+
+! Phase C installations
+
+New PVSystem.PV11 Bus1=21.3   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV12 Bus1=45.3   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV13 Bus1=97.3   Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV14 Bus1=102.3  Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0
+New PVSystem.PV15 Bus1=116.3  Phases=1 Conn=Wye kV=2.40 Pmpp=40 kVA=45 PF=1 Irradiance=1.0

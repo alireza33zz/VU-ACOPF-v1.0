@@ -1,0 +1,9 @@
+New Transformer.TR1
+~ Phases=3
+~ Windings=2
+~ Buses=[SourceBus 150]
+~ Conns=[Delta Wye]
+~ kVs=[11 4.16]
+~ kVAs=[5000 5000]
+~ XHL=4
+~ sub=y

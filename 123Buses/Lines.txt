@@ -1,0 +1,150 @@
+!=========================================================
+! MODIFIED IEEE 123-BUS FEEDER - LINE DEFINITIONS
+!
+! Modifications:
+! - All feeder lines converted to three-phase
+! - All phase-specific bus suffixes removed
+! - Normally closed switches merged into adjacent branches
+! - Normally open switches removed
+! - Load transformer and associated switch removed
+! - Regulator-side bus suffixes removed
+! - Radial default topology preserved
+!
+! LineCode conversion:
+! - Original LineCode 7  replaced by LineCode 6
+! - Original LineCode 8  replaced by LineCode 6
+! - Original LineCode 9  replaced by LineCode 12
+! - Original LineCode 10 replaced by LineCode 12
+! - Original LineCode 11 replaced by LineCode 12
+!=========================================================
+
+New Line.L115  Phases=3 Bus1=Substation Bus2=1    LineCode=1  Length=0.4   units=kft
+
+New Line.L1    Phases=3 Bus1=1          Bus2=2    LineCode=12 Length=0.175 units=kft
+New Line.L2    Phases=3 Bus1=1          Bus2=3    LineCode=12 Length=0.25  units=kft
+New Line.L3    Phases=3 Bus1=1          Bus2=7    LineCode=1  Length=0.3   units=kft
+New Line.L4    Phases=3 Bus1=3          Bus2=4    LineCode=12 Length=0.2   units=kft
+New Line.L5    Phases=3 Bus1=3          Bus2=5    LineCode=12 Length=0.325 units=kft
+New Line.L6    Phases=3 Bus1=5          Bus2=6    LineCode=12 Length=0.25  units=kft
+New Line.L7    Phases=3 Bus1=7          Bus2=8    LineCode=1  Length=0.2   units=kft
+New Line.L8    Phases=3 Bus1=8          Bus2=12   LineCode=12 Length=0.225 units=kft
+New Line.L9    Phases=3 Bus1=8          Bus2=9    LineCode=12 Length=0.225 units=kft
+New Line.L10   Phases=3 Bus1=8          Bus2=13   LineCode=1  Length=0.3   units=kft
+New Line.L11   Phases=3 Bus1=9          Bus2=14   LineCode=12 Length=0.425 units=kft
+New Line.L12   Phases=3 Bus1=13         Bus2=34   LineCode=12 Length=0.15  units=kft
+New Line.L13   Phases=3 Bus1=13         Bus2=18   LineCode=2  Length=0.825 units=kft
+New Line.L14   Phases=3 Bus1=14         Bus2=11   LineCode=12 Length=0.25  units=kft
+New Line.L15   Phases=3 Bus1=14         Bus2=10   LineCode=12 Length=0.25  units=kft
+New Line.L16   Phases=3 Bus1=15         Bus2=16   LineCode=12 Length=0.375 units=kft
+New Line.L17   Phases=3 Bus1=15         Bus2=17   LineCode=12 Length=0.35  units=kft
+New Line.L18   Phases=3 Bus1=18         Bus2=19   LineCode=12 Length=0.25  units=kft
+New Line.L19   Phases=3 Bus1=18         Bus2=21   LineCode=2  Length=0.3   units=kft
+New Line.L20   Phases=3 Bus1=19         Bus2=20   LineCode=12 Length=0.325 units=kft
+New Line.L21   Phases=3 Bus1=21         Bus2=22   LineCode=12 Length=0.525 units=kft
+New Line.L22   Phases=3 Bus1=21         Bus2=23   LineCode=2  Length=0.25  units=kft
+New Line.L23   Phases=3 Bus1=23         Bus2=24   LineCode=12 Length=0.55  units=kft
+New Line.L24   Phases=3 Bus1=23         Bus2=25   LineCode=2  Length=0.275 units=kft
+New Line.L25   Phases=3 Bus1=25         Bus2=26   LineCode=6  Length=0.35  units=kft
+New Line.L26   Phases=3 Bus1=25         Bus2=28   LineCode=2  Length=0.2   units=kft
+New Line.L27   Phases=3 Bus1=26         Bus2=27   LineCode=6  Length=0.275 units=kft
+New Line.L28   Phases=3 Bus1=26         Bus2=31   LineCode=12 Length=0.225 units=kft
+New Line.L29   Phases=3 Bus1=27         Bus2=33   LineCode=12 Length=0.5   units=kft
+New Line.L30   Phases=3 Bus1=28         Bus2=29   LineCode=2  Length=0.3   units=kft
+New Line.L31   Phases=3 Bus1=29         Bus2=30   LineCode=2  Length=0.35  units=kft
+New Line.L32   Phases=3 Bus1=30         Bus2=250  LineCode=2  Length=0.2   units=kft
+New Line.L33   Phases=3 Bus1=31         Bus2=32   LineCode=12 Length=0.3   units=kft
+New Line.L34   Phases=3 Bus1=34         Bus2=15   LineCode=12 Length=0.1   units=kft
+New Line.L35   Phases=3 Bus1=35         Bus2=36   LineCode=6  Length=0.65  units=kft
+New Line.L36   Phases=3 Bus1=35         Bus2=40   LineCode=1  Length=0.25  units=kft
+New Line.L37   Phases=3 Bus1=36         Bus2=37   LineCode=12 Length=0.3   units=kft
+New Line.L38   Phases=3 Bus1=36         Bus2=38   LineCode=12 Length=0.25  units=kft
+New Line.L39   Phases=3 Bus1=38         Bus2=39   LineCode=12 Length=0.325 units=kft
+New Line.L40   Phases=3 Bus1=40         Bus2=41   LineCode=12 Length=0.325 units=kft
+New Line.L41   Phases=3 Bus1=40         Bus2=42   LineCode=1  Length=0.25  units=kft
+New Line.L42   Phases=3 Bus1=42         Bus2=43   LineCode=12 Length=0.5   units=kft
+New Line.L43   Phases=3 Bus1=42         Bus2=44   LineCode=1  Length=0.2   units=kft
+New Line.L44   Phases=3 Bus1=44         Bus2=45   LineCode=12 Length=0.2   units=kft
+New Line.L45   Phases=3 Bus1=44         Bus2=47   LineCode=1  Length=0.25  units=kft
+New Line.L46   Phases=3 Bus1=45         Bus2=46   LineCode=12 Length=0.3   units=kft
+New Line.L47   Phases=3 Bus1=47         Bus2=48   LineCode=4  Length=0.15  units=kft
+New Line.L48   Phases=3 Bus1=47         Bus2=49   LineCode=4  Length=0.25  units=kft
+New Line.L49   Phases=3 Bus1=49         Bus2=50   LineCode=4  Length=0.25  units=kft
+New Line.L50   Phases=3 Bus1=50         Bus2=51   LineCode=4  Length=0.25  units=kft
+New Line.L51   Phases=3 Bus1=51         Bus2=151  LineCode=4  Length=0.5   units=kft
+New Line.L52   Phases=3 Bus1=52         Bus2=53   LineCode=1  Length=0.2   units=kft
+New Line.L53   Phases=3 Bus1=53         Bus2=54   LineCode=1  Length=0.125 units=kft
+New Line.L54   Phases=3 Bus1=54         Bus2=55   LineCode=1  Length=0.275 units=kft
+New Line.L55   Phases=3 Bus1=54         Bus2=57   LineCode=3  Length=0.35  units=kft
+New Line.L56   Phases=3 Bus1=55         Bus2=56   LineCode=1  Length=0.275 units=kft
+New Line.L57   Phases=3 Bus1=57         Bus2=58   LineCode=12 Length=0.25  units=kft
+New Line.L58   Phases=3 Bus1=57         Bus2=60   LineCode=3  Length=0.75  units=kft
+New Line.L59   Phases=3 Bus1=58         Bus2=59   LineCode=12 Length=0.25  units=kft
+New Line.L60   Phases=3 Bus1=60         Bus2=61   LineCode=5  Length=0.55  units=kft
+New Line.L61   Phases=3 Bus1=60         Bus2=62   LineCode=12 Length=0.25  units=kft
+New Line.L62   Phases=3 Bus1=62         Bus2=63   LineCode=12 Length=0.175 units=kft
+New Line.L63   Phases=3 Bus1=63         Bus2=64   LineCode=12 Length=0.35  units=kft
+New Line.L64   Phases=3 Bus1=64         Bus2=65   LineCode=12 Length=0.425 units=kft
+New Line.L65   Phases=3 Bus1=65         Bus2=66   LineCode=12 Length=0.325 units=kft
+New Line.L66   Phases=3 Bus1=67         Bus2=68   LineCode=12 Length=0.2   units=kft
+New Line.L67   Phases=3 Bus1=67         Bus2=72   LineCode=3  Length=0.275 units=kft
+New Line.L68   Phases=3 Bus1=67         Bus2=97   LineCode=3  Length=0.25  units=kft
+New Line.L69   Phases=3 Bus1=68         Bus2=69   LineCode=12 Length=0.275 units=kft
+New Line.L70   Phases=3 Bus1=69         Bus2=70   LineCode=12 Length=0.325 units=kft
+New Line.L71   Phases=3 Bus1=70         Bus2=71   LineCode=12 Length=0.275 units=kft
+New Line.L72   Phases=3 Bus1=72         Bus2=73   LineCode=12 Length=0.275 units=kft
+New Line.L73   Phases=3 Bus1=72         Bus2=76   LineCode=3  Length=0.2   units=kft
+New Line.L74   Phases=3 Bus1=73         Bus2=74   LineCode=12 Length=0.35  units=kft
+New Line.L75   Phases=3 Bus1=74         Bus2=75   LineCode=12 Length=0.4   units=kft
+New Line.L76   Phases=3 Bus1=76         Bus2=77   LineCode=6  Length=0.4   units=kft
+New Line.L77   Phases=3 Bus1=76         Bus2=86   LineCode=3  Length=0.7   units=kft
+New Line.L78   Phases=3 Bus1=77         Bus2=78   LineCode=6  Length=0.1   units=kft
+New Line.L79   Phases=3 Bus1=78         Bus2=79   LineCode=6  Length=0.225 units=kft
+New Line.L80   Phases=3 Bus1=78         Bus2=80   LineCode=6  Length=0.475 units=kft
+New Line.L81   Phases=3 Bus1=80         Bus2=81   LineCode=6  Length=0.175 units=kft
+New Line.L82   Phases=3 Bus1=81         Bus2=82   LineCode=6  Length=0.25  units=kft
+New Line.L83   Phases=3 Bus1=81         Bus2=84   LineCode=12 Length=0.675 units=kft
+New Line.L84   Phases=3 Bus1=82         Bus2=83   LineCode=6  Length=0.25  units=kft
+New Line.L85   Phases=3 Bus1=84         Bus2=85   LineCode=12 Length=0.475 units=kft
+New Line.L86   Phases=3 Bus1=86         Bus2=87   LineCode=6  Length=0.45  units=kft
+New Line.L87   Phases=3 Bus1=87         Bus2=88   LineCode=12 Length=0.175 units=kft
+New Line.L88   Phases=3 Bus1=87         Bus2=89   LineCode=6  Length=0.275 units=kft
+New Line.L89   Phases=3 Bus1=89         Bus2=90   LineCode=12 Length=0.25  units=kft
+New Line.L90   Phases=3 Bus1=89         Bus2=91   LineCode=6  Length=0.225 units=kft
+New Line.L91   Phases=3 Bus1=91         Bus2=92   LineCode=12 Length=0.3   units=kft
+New Line.L92   Phases=3 Bus1=91         Bus2=93   LineCode=6  Length=0.225 units=kft
+New Line.L93   Phases=3 Bus1=93         Bus2=94   LineCode=12 Length=0.275 units=kft
+New Line.L94   Phases=3 Bus1=93         Bus2=95   LineCode=6  Length=0.3   units=kft
+New Line.L95   Phases=3 Bus1=95         Bus2=96   LineCode=12 Length=0.2   units=kft
+New Line.L96   Phases=3 Bus1=97         Bus2=98   LineCode=3  Length=0.275 units=kft
+New Line.L97   Phases=3 Bus1=98         Bus2=99   LineCode=3  Length=0.55  units=kft
+New Line.L98   Phases=3 Bus1=99         Bus2=100  LineCode=3  Length=0.3   units=kft
+New Line.L99   Phases=3 Bus1=100        Bus2=450  LineCode=3  Length=0.8   units=kft
+New Line.L100  Phases=3 Bus1=101        Bus2=102  LineCode=12 Length=0.225 units=kft
+New Line.L101  Phases=3 Bus1=101        Bus2=105  LineCode=3  Length=0.275 units=kft
+New Line.L102  Phases=3 Bus1=102        Bus2=103  LineCode=12 Length=0.325 units=kft
+New Line.L103  Phases=3 Bus1=103        Bus2=104  LineCode=12 Length=0.7   units=kft
+New Line.L104  Phases=3 Bus1=105        Bus2=106  LineCode=12 Length=0.225 units=kft
+New Line.L105  Phases=3 Bus1=105        Bus2=108  LineCode=3  Length=0.325 units=kft
+New Line.L106  Phases=3 Bus1=106        Bus2=107  LineCode=12 Length=0.575 units=kft
+New Line.L107  Phases=3 Bus1=108        Bus2=109  LineCode=12 Length=0.45  units=kft
+New Line.L108  Phases=3 Bus1=108        Bus2=300  LineCode=3  Length=1.0   units=kft
+New Line.L109  Phases=3 Bus1=109        Bus2=110  LineCode=12 Length=0.3   units=kft
+New Line.L110  Phases=3 Bus1=110        Bus2=111  LineCode=12 Length=0.575 units=kft
+New Line.L111  Phases=3 Bus1=110        Bus2=112  LineCode=12 Length=0.125 units=kft
+New Line.L112  Phases=3 Bus1=112        Bus2=113  LineCode=12 Length=0.525 units=kft
+New Line.L113  Phases=3 Bus1=113        Bus2=114  LineCode=12 Length=0.325 units=kft
+New Line.L119  Phases=3 Bus1=48 		Bus2=115  LineCode=4  Length=0.25  units=kft
+New Line.L120  Phases=3 Bus1=79 		Bus2=116  LineCode=6  Length=0.225 units=kft
+New Line.L121  Phases=3 Bus1=105		Bus2=117  LineCode=3  Length=0.275 units=kft
+
+! Normally closed Sw3 merged into L114
+New Line.L114  Phases=3 Bus1=18         Bus2=35   LineCode=4  Length=0.375 units=kft
+
+! Normally closed Sw2 merged into L116
+New Line.L116  Phases=3 Bus1=13         Bus2=52   LineCode=1  Length=0.4   units=kft
+
+! Normally closed Sw4 merged into L117
+New Line.L117  Phases=3 Bus1=60         Bus2=67   LineCode=6  Length=0.35  units=kft
+
+! Normally closed Sw5 merged into L118
+New Line.L118  Phases=3 Bus1=97         Bus2=101  LineCode=3  Length=0.25  units=kft

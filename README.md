@@ -48,6 +48,14 @@ Main packages typically required:
 - `PowerModelsDistribution`
 - `OpenDSSDirect`
 - `Plots`
+- `StatsPlots`
+- `PlotUtils`
+- `DataFrames`
+- `CSV`
+
+The code also uses the Julia standard-library modules `Statistics` and
+`Printf`; these are included with Julia and do not need to be installed
+separately.
 
 Install packages using:
 
@@ -58,7 +66,11 @@ Pkg.add([
     "Ipopt",
     "PowerModelsDistribution",
     "OpenDSSDirect",
-    "Plots"
+    "Plots",
+    "StatsPlots",
+    "PlotUtils",
+    "DataFrames",
+    "CSV"
 ])
 ```
 

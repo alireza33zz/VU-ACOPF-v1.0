@@ -1,0 +1,43 @@
+Clear
+
+Set DefaultBaseFrequency=60
+
+New Circuit.My123_Modified
+~ BasekV=11.0
+~ Bus1=SourceBus
+~ pu=1.05
+~ Angle=0
+~ MVAsc3=500
+~ MVAsc1=250
+
+New Transformer.TR1
+~ Phases=3
+~ Windings=2
+~ Buses=[SourceBus Substation]
+~ Conns=[Delta Wye]
+~ kVs=[11 4.16]
+~ kVAs=[5000 5000]
+~ XHL=4
+~ %R=0.5
+~ sub=y
+
+Redirect LineCode.txt
+!Redirect LoadShapes.txt
+Redirect Lines.txt
+!Redirect Loads3M.txt
+Redirect Loads.txt
+Redirect PV.txt
+!Redirect Monitors.txt
+
+Set VoltageBases=[11 4.16]
+!CalcVoltageBases
+
+Set Mode=Snap
+Set ControlMode=Static
+Set LoadMult=1.0
+
+!Solve
+
+!Export Voltages
+!Export Powers
+!Export Losses
