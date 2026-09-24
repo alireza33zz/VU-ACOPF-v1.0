@@ -99,10 +99,10 @@ xticks!(p2, bar_positions[1:6:end], results_df.bus_id[1:6:end], rotation=-0)
 #end
 
 if VUF_STATUS
-    output_dir = "C:\\Users\\Alireza\\.julia\\Distribution-Locational-Mariginal-Price-55LV-simplified\\Outputs\\With VUF Constraint"
+    output_dir = joinpath(@__DIR__, "..", "Outputs", "With VUF Constraint")
     mkpath(output_dir)
     elseif !VUF_STATUS
-    output_dir = "C:\\Users\\Alireza\\.julia\\Distribution-Locational-Mariginal-Price-55LV-simplified\\Outputs\\Without VUF Constraint"
+    output_dir = joinpath(@__DIR__, "..", "Outputs", "Without VUF Constraint")
     mkpath(output_dir)
 end
 

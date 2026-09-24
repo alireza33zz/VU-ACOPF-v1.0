@@ -7,7 +7,7 @@ using Statistics
 using Plots, StatsPlots
 using Plots.PlotMeasures
 
-include("Bus_map.jl");
+include(joinpath(@__DIR__, "Bus_map.jl"));
 
 function format_results(solution::Dict, pm)
     # Initialize DataFrame for bus results

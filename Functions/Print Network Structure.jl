@@ -1,14 +1,14 @@
 # using Plots
 using PlotUtils  # Necessary for calculating optimized ticks
-include("Bus_map.jl")
+include(joinpath(@__DIR__, "Bus_map.jl"))
 
 function print_network_structure(solution::Dict, pm)
 
             # Create output directory if it doesn't exist
             if VUF_STATUS
-                output_dir = "C:\\Users\\Alireza\\.julia\\Distribution-Locational-Mariginal-Price-55LV-simplified\\Outputs\\With VUF Constraint"
+                output_dir = joinpath(@__DIR__, "..", "Outputs", "With VUF Constraint")
             else
-                output_dir = "C:\\Users\\Alireza\\.julia\\Distribution-Locational-Mariginal-Price-55LV-simplified\\Outputs\\Without VUF Constraint"
+                output_dir = joinpath(@__DIR__, "..", "Outputs", "Without VUF Constraint")
             end
             mkpath(output_dir)
     
@@ -594,9 +594,9 @@ end
     #= Plotting
     # Create output directory if it doesn't exist
         if VUF_STATUS
-            output_dir = "C:\\Users\\Alireza\\.julia\\Distribution-Locational-Mariginal-Price-55LV-simplified\\Outputs\\With VUF Constraint"
+            output_dir = joinpath(@__DIR__, "..", "Outputs", "With VUF Constraint")
         else
-            output_dir = "C:\\Users\\Alireza\\.julia\\Distribution-Locational-Mariginal-Price-55LV-simplified\\Outputs\\Without VUF Constraint"
+            output_dir = joinpath(@__DIR__, "..", "Outputs", "Without VUF Constraint")
         end
         mkpath(output_dir)
 

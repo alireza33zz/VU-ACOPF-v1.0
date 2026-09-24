@@ -52,7 +52,7 @@ end
 # ─────────────────────────────────────────────────────────────────────────────
 
 global PLOT_DISPLAY = true
-global SAVING_FIGURES_STATUS = false
+global SAVING_FIGURES_STATUS = true
 global PRINT_PERMISSION_personal = true
 
 
@@ -60,9 +60,11 @@ global PRINT_PERMISSION_personal = true
 # LOAD CORE ALGORITHMS
 # ─────────────────────────────────────────────────────────────────────────────
 
-include("Default Gen cost.jl")
-include("VUF+Gen costs.jl")
-include("MPVUR+Gen costs.jl")
+const REPO_ROOT = @__DIR__
+
+include(joinpath(REPO_ROOT, "Default Gen cost.jl"))
+include(joinpath(REPO_ROOT, "VUF+Gen costs.jl"))
+include(joinpath(REPO_ROOT, "MPVUR+Gen costs.jl"))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -71,7 +73,7 @@ include("MPVUR+Gen costs.jl")
 
 Case_Num = 1 # Use for labeling outputs.
 
-file_path = "LVTestCase/Master.dss"
+file_path = joinpath(REPO_ROOT, "LVTestCase", "Master.dss")
 
 
 # ─────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,10 @@
+
+Total Generation Cost: $461.515
+The additional cost rather than hard constraint is: -0.002
+The additional cost rather than hard constraint is: -0.0%
+The additional cost rather than no constraint is: -0.002
+The additional cost rather than no constraint is: -0.0%
+
+Total Pg: 320.473 kW
+Total Pl: 311.476 kW
+Total Losses (Pg - Pl): 8.997 kW

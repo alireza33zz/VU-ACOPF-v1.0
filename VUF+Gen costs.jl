@@ -11,22 +11,24 @@ using DataFrames
 
 
 
-include("Functions/Default Configuration.jl");
-include("Functions/Configure Solver.jl");
-include("Functions/Initialize Model.jl");
-include("Functions/Calculate VUF.jl");
-include("Functions/Format Results.jl");
-include("Functions/Print Results.jl");
-include("Functions/Solve OPF with VUF.jl");
-include("Functions/Test OPF with VUF.jl");
-include("Functions/Print Network Structure.jl");
-include("Functions/Balanced 3ph DER.jl");
-include("Functions/PQ Curve.jl");
-include("Functions/Dual Variables.jl"); 
-include("Functions/Shadow Prices.jl");
-include("Functions/Thermal Limit.jl");
-include("Functions/Voltage Magnitude.jl");
-include("Functions/VUF Constriant.jl");
+FUNCTION_DIR = joinpath(@__DIR__, "Functions")
+
+include(joinpath(FUNCTION_DIR, "Default Configuration.jl"));
+include(joinpath(FUNCTION_DIR, "Configure Solver.jl"));
+include(joinpath(FUNCTION_DIR, "Initialize Model.jl"));
+include(joinpath(FUNCTION_DIR, "Calculate VUF.jl"));
+include(joinpath(FUNCTION_DIR, "Format Results.jl"));
+include(joinpath(FUNCTION_DIR, "Print Results.jl"));
+include(joinpath(FUNCTION_DIR, "Solve OPF with VUF.jl"));
+include(joinpath(FUNCTION_DIR, "Test OPF with VUF.jl"));
+include(joinpath(FUNCTION_DIR, "Print Network Structure.jl"));
+include(joinpath(FUNCTION_DIR, "Balanced 3ph DER.jl"));
+include(joinpath(FUNCTION_DIR, "PQ Curve.jl"));
+include(joinpath(FUNCTION_DIR, "Dual Variables.jl"));
+include(joinpath(FUNCTION_DIR, "Shadow Prices.jl"));
+include(joinpath(FUNCTION_DIR, "Thermal Limit.jl"));
+include(joinpath(FUNCTION_DIR, "Voltage Magnitude.jl"));
+include(joinpath(FUNCTION_DIR, "VUF Constriant.jl"));
 
 #=
 config = OPFConfig(

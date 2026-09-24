@@ -2,9 +2,9 @@
 Main function to solve OPF with custom constraints
 """
 
-include("Balanced 3ph DER.jl");
-include("PQ Curve.jl");
-include("Bus_map.jl");
+include(joinpath(@__DIR__, "Balanced 3ph DER.jl"));
+include(joinpath(@__DIR__, "PQ Curve.jl"));
+include(joinpath(@__DIR__, "Bus_map.jl"));
 
 
 function solve_opf_with_VUF(file_path::String, config::OPFConfig=default_config(), M::Float64=5.0, N::Float64=5.0)

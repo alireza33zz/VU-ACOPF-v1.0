@@ -78,17 +78,20 @@ Pkg.add([
 
 # Running the Simulation
 
-The project is executed from:
+The project entry point is:
 
 ```
-main.jl
+Main.jl
 ```
 
 Run with:
 
 ```bash
-julia main.jl
+julia Main.jl
 ```
+
+All input files and generated results are resolved relative to this repository,
+so the command can be run from any working directory.
 
 ---
 

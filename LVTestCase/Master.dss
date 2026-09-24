@@ -6,8 +6,8 @@ Redirect LineCode.txt
 Redirect LoadShapes.txt
 Redirect Lines.txt
 Redirect Transformers.txt
-Redirect Loads3.txt
-Redirect PV3.txt
+Redirect Loads1.txt
+Redirect PV1.txt
 Redirect Monitors.txt
 
 
