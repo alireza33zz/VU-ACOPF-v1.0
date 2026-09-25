@@ -201,14 +201,14 @@ The framework was developed for studying:
 If you use this repository in your research or publication, please cite:
 
 ```bibtex
-@misc{zabihi2025impactvoltageunbalancedistribution,
-  title        = {On the Impact of Voltage Unbalance on Distribution Locational Marginal Prices},
-  author       = {Zabihi, Alireza and Badesa, Luis and Hernandez, Araceli},
-  year         = {2025},
-  eprint       = {2511.13971},
-  archivePrefix= {arXiv},
-  primaryClass = {eess.SY},
-  url          = {https://arxiv.org/abs/2511.13971}
+@misc{zabihi2026voltageunbalanceawareacoptimal,
+      title={Voltage Unbalance-Aware AC Optimal Power Flow in Distribution Networks}, 
+      author={Alireza Zabihi and Luis Badesa and Araceli Hernandez},
+      year={2026},
+      eprint={2606.06167},
+      archivePrefix={arXiv},
+      primaryClass={eess.SY},
+      url={https://arxiv.org/abs/2606.06167}, 
 }
 ```
 
